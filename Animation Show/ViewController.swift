@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        descriptionLabel.layer.cornerRadius = 25
+        descriptionLabel.layer.cornerRadius = 15
         // почему-то не рабоатет эта команда, края не скругляются
     }
 
