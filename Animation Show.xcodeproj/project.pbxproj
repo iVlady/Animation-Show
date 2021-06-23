@@ -40,7 +40,6 @@
 		B651088D268343350098CCF6 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B651086C268343350098CCF6 /* TransitionZoom.swift */; };
 		B651088E268343350098CCF6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6510874268343350098CCF6 /* ImageLoader.swift */; };
 		B651088F268343350098CCF6 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6510860268343340098CCF6 /* SpringTextField.swift */; };
-		B651089126834C010098CCF6 /* extentions + animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B651089026834C010098CCF6 /* extentions + animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +79,6 @@
 		B6510872268343350098CCF6 /* SpringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
 		B6510873268343350098CCF6 /* SpringImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
 		B6510874268343350098CCF6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		B651089026834C010098CCF6 /* extentions + animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extentions + animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +119,6 @@
 				B6510849268343100098CCF6 /* Assets.xcassets */,
 				B651084B268343100098CCF6 /* LaunchScreen.storyboard */,
 				B651084E268343100098CCF6 /* Info.plist */,
-				B651089026834C010098CCF6 /* extentions + animations.swift */,
 			);
 			path = "Animation Show";
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 				B651088C268343350098CCF6 /* DesignableImageView.swift in Sources */,
 				B6510881268343350098CCF6 /* AsyncButton.swift in Sources */,
 				B651088B268343350098CCF6 /* UnwindSegue.swift in Sources */,
-				B651089126834C010098CCF6 /* extentions + animations.swift in Sources */,
 				B651087B268343350098CCF6 /* AsyncImageView.swift in Sources */,
 				B651088F268343350098CCF6 /* SpringTextField.swift in Sources */,
 				B6510886268343350098CCF6 /* SpringLabel.swift in Sources */,

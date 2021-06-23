@@ -8,19 +8,64 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var animateButton: UIButton!
     
-    @IBOutlet weak var springView: SpringView!
+    @IBOutlet weak var animateButton: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var springView: SpringImageView!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        descriptionLabel.layer.cornerRadius = 25
     }
 
     @IBAction func animateSpringView(_ sender: Any) {
-        
-        flash()
+            
+        switch  animationEnum {
+        case .squeeze:
+            squeeze()
+            animationEnum = .shake
+            descriptionText()
+        case .shake:
+            shake()
+            animationEnum = .wobble
+            descriptionText()
+        case .wobble:
+            wobble()
+            animationEnum = .flipX
+            descriptionText()
+        case .flipX:
+            flipX()
+            animationEnum = .squeezeRight
+            descriptionText()
+        case .squeezeRight:
+            squeezeRight()
+            animationEnum = .slideDown
+            descriptionText()
+        case .slideDown:
+            slideDown()
+            animationEnum = .fadeInLeft
+            descriptionText()
+        case .fadeInLeft:
+            fadeInLeft()
+            animationEnum = .fadeInUp
+            descriptionText()
+        case .fadeInUp:
+            fadeInUp()
+            animationEnum = .zoomIn
+            descriptionText()
+        case .zoomIn:
+            zoomIn()
+            animationEnum = .flash
+            descriptionText()
+        case .flash:
+            flash()
+            animationEnum = .squeeze
+            descriptionText()
+        }
+
     }
     
     enum AnimationTypes: String {
@@ -96,6 +141,8 @@ class ViewController: UIViewController {
             springView.animate()
         """
     }
+    
+    var animationEnum: AnimationTypes = .squeeze
     
 }
 
@@ -180,6 +227,11 @@ extension ViewController {
         springView.force = 1.0
         springView.curve = "easeOutExpo"
         springView.animate()
+    }
+    
+    func descriptionText() -> String {
+        descriptionLabel.text = animationEnum.rawValue
+        return descriptionLabel.text ?? "Nothing's here"
     }
 }
 
