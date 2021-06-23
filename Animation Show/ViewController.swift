@@ -87,7 +87,7 @@ class ViewController: UIViewController {
 extension ViewController {
     func squeeze() {
         springView.animation = "squeeze"
-        springView.duration = 3.0
+        springView.duration = 2.3
         springView.force = 1.0
         springView.animate()
     }
@@ -173,7 +173,7 @@ extension ViewController {
     enum AnimationTypes: String {
         case squeeze = """
             springView.animation = "squeeze"
-            springView.duration = 3.0
+            springView.duration = 2.3
             springView.force = 1.0
             springView.animate()
         """
