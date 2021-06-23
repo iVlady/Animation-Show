@@ -8,12 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var animateButton: UIButton!
+    
+    @IBOutlet weak var springView: SpringView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+   
+        
     }
 
-
+    @IBAction func animateSpringView(_ sender: Any) {
+        springView.animation = "squeeze"
+        springView.duration = 3.0
+        springView.force = 2.5
+        springView.animate()
+    }
+    
 }
 
