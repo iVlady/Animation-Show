@@ -15,8 +15,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See thedescription here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-iY-xRi">
+                                <rect key="frame" x="56" y="554" width="302" height="137"/>
+                                <color key="backgroundColor" red="0.090196087960000004" green="0.60392159219999997" blue="0.66274511810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="ryg-yj-heM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="basketball-basket" translatesAutoresizingMaskIntoConstraints="NO" id="4TV-df-bKc">
+                                <rect key="frame" x="276" y="288" width="118" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="118" id="6wH-M9-iDi"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="85" id="KMT-yF-AKw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="basketball-player" translatesAutoresizingMaskIntoConstraints="NO" id="h1p-cO-YCd" customClass="SpringImageView" customModule="Animation_Show" customModuleProvider="target">
+                                <rect key="frame" x="90" y="251" width="235" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="241" id="Hzx-2g-nBc"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="235" id="gsH-yX-jbt"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nol-ig-dFs">
-                                <rect key="frame" x="56" y="715" width="302" height="76"/>
+                                <rect key="frame" x="56" y="767" width="302" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="SzG-cX-fb7"/>
                                 </constraints>
@@ -28,44 +52,20 @@
                                     <action selector="animateSpringView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cxm-ax-A9K"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See thedescription here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-iY-xRi">
-                                <rect key="frame" x="56" y="485" width="302" height="137"/>
-                                <color key="backgroundColor" red="0.090196087960000004" green="0.60392159219999997" blue="0.66274511810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="137" id="ryg-yj-heM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="basketball-basket" translatesAutoresizingMaskIntoConstraints="NO" id="4TV-df-bKc">
-                                <rect key="frame" x="288" y="185.5" width="118" height="85"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="118" id="6wH-M9-iDi"/>
-                                    <constraint firstAttribute="height" constant="85" id="KMT-yF-AKw"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="basketball-player" translatesAutoresizingMaskIntoConstraints="NO" id="h1p-cO-YCd" customClass="SpringImageView" customModule="Animation_Show" customModuleProvider="target">
-                                <rect key="frame" x="90" y="135" width="235" height="241"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="241" id="Hzx-2g-nBc"/>
-                                    <constraint firstAttribute="width" constant="235" id="gsH-yX-jbt"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.74901962280000001" green="0.87843137979999997" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="PD9-iY-xRi" firstAttribute="top" secondItem="h1p-cO-YCd" secondAttribute="bottom" constant="109" id="3Hj-rM-5L3"/>
+                            <constraint firstItem="PD9-iY-xRi" firstAttribute="top" secondItem="h1p-cO-YCd" secondAttribute="bottom" constant="62" id="3Hj-rM-5L3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PD9-iY-xRi" secondAttribute="trailing" constant="56" id="CKx-Wg-Ptn"/>
                             <constraint firstItem="PD9-iY-xRi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="DXH-f2-Giw"/>
                             <constraint firstItem="nol-ig-dFs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="GJC-QH-kOf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nol-ig-dFs" secondAttribute="bottom" constant="71" id="LBO-sY-EDa"/>
-                            <constraint firstItem="nol-ig-dFs" firstAttribute="top" secondItem="PD9-iY-xRi" secondAttribute="bottom" constant="93" id="Vme-7U-BWd"/>
-                            <constraint firstItem="4TV-df-bKc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-220" id="e8O-ZM-whw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nol-ig-dFs" secondAttribute="bottom" constant="19" id="LBO-sY-EDa"/>
+                            <constraint firstItem="PD9-iY-xRi" firstAttribute="top" secondItem="4TV-df-bKc" secondAttribute="bottom" constant="181" id="PMC-Qx-hpw"/>
+                            <constraint firstItem="nol-ig-dFs" firstAttribute="top" secondItem="PD9-iY-xRi" secondAttribute="bottom" constant="76" id="Vme-7U-BWd"/>
                             <constraint firstItem="PD9-iY-xRi" firstAttribute="centerX" secondItem="nol-ig-dFs" secondAttribute="centerX" id="gcH-Ef-f1X"/>
-                            <constraint firstItem="4TV-df-bKc" firstAttribute="leading" secondItem="h1p-cO-YCd" secondAttribute="trailing" constant="-37" id="iBX-sj-L2h"/>
-                            <constraint firstItem="4TV-df-bKc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="140" id="t8Y-be-aNS"/>
+                            <constraint firstItem="4TV-df-bKc" firstAttribute="leading" secondItem="h1p-cO-YCd" secondAttribute="trailing" constant="-49" id="iBX-sj-L2h"/>
+                            <constraint firstItem="4TV-df-bKc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="128" id="t8Y-be-aNS"/>
                         </constraints>
                     </view>
                     <connections>

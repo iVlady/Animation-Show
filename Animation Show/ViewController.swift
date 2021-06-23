@@ -20,59 +20,59 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        descriptionLabel.layer.cornerRadius = 15
+        descriptionLabel.layer.cornerRadius = 20
         // почему-то не рабоатет эта команда, края не скругляются
     }
 
     @IBAction func animateSpringView(_ sender: Any) {
-            
-        switch  animationEnum {
         
+        switch  animationEnum {
+
         case .squeeze:
             squeeze()
             animationEnum = .shake
             descriptionText()
-            
+
         case .shake:
             shake()
             animationEnum = .wobble
             descriptionText()
-            
+
         case .wobble:
             wobble()
             animationEnum = .flipX
             descriptionText()
-            
+
         case .flipX:
             flipX()
             animationEnum = .squeezeRight
             descriptionText()
-            
+
         case .squeezeRight:
             squeezeRight()
             animationEnum = .slideDown
             descriptionText()
-            
+
         case .slideDown:
             slideDown()
             animationEnum = .fadeInLeft
             descriptionText()
-            
+
         case .fadeInLeft:
             fadeInLeft()
             animationEnum = .fadeInUp
             descriptionText()
-            
+
         case .fadeInUp:
             fadeInUp()
             animationEnum = .zoomIn
             descriptionText()
-            
+
         case .zoomIn:
             zoomIn()
             animationEnum = .flash
             descriptionText()
-            
+
         case .flash:
             flash()
             animationEnum = .squeeze
@@ -111,7 +111,7 @@ extension ViewController {
     func flipX() {
         springView.animation = "flipX"
         springView.duration = 0.4
-        springView.force = 2.0
+        springView.force = 3.0
         springView.curve = "easeIn"
         springView.animate()
     }
