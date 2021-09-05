@@ -92,6 +92,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B624521126E55E7E00C9BB25 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B65108442683430F0098CCF6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B624521226E55E8F00C9BB25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B65108402683430F0098CCF6 /* AppDelegate.swift */,
+				B65108422683430F0098CCF6 /* SceneDelegate.swift */,
+				B651084E268343100098CCF6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B624521326E55EA300C9BB25 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B65108462683430F0098CCF6 /* Main.storyboard */,
+				B651084B268343100098CCF6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		B65108342683430F0098CCF6 = {
 			isa = PBXGroup;
 			children = (
@@ -111,14 +138,11 @@
 		B651083F2683430F0098CCF6 /* Animation Show */ = {
 			isa = PBXGroup;
 			children = (
+				B624521126E55E7E00C9BB25 /* ViewControllers */,
+				B624521326E55EA300C9BB25 /* Storyboards */,
+				B624521226E55E8F00C9BB25 /* Supporting Files */,
 				B6510854268343180098CCF6 /* Spring */,
-				B65108402683430F0098CCF6 /* AppDelegate.swift */,
-				B65108422683430F0098CCF6 /* SceneDelegate.swift */,
-				B65108442683430F0098CCF6 /* ViewController.swift */,
-				B65108462683430F0098CCF6 /* Main.storyboard */,
 				B6510849268343100098CCF6 /* Assets.xcassets */,
-				B651084B268343100098CCF6 /* LaunchScreen.storyboard */,
-				B651084E268343100098CCF6 /* Info.plist */,
 			);
 			path = "Animation Show";
 			sourceTree = "<group>";
