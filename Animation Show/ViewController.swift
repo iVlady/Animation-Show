@@ -15,15 +15,6 @@ class ViewController: UIViewController {
     
     var animationEnum: AnimationTypes = .squeeze
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        descriptionLabel.layer.cornerRadius = 20
-        // почему-то не рабоатет эта команда, края не скругляются
-    }
-
     @IBAction func animateSpringView(_ sender: Any) {
         
         switch  animationEnum {
